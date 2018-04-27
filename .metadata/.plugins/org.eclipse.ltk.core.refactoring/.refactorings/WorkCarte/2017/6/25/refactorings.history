@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;WorkCarte.pnlWork&apos; to &apos;pnlTabbed&apos;&#x0A;- Original project: &apos;WorkCarte&apos;&#x0A;- Original element: &apos;WorkCarte.pnlWork&apos;&#x0A;- Renamed element: &apos;WorkCarte.pnlTabbed&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;pnlWork&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;WorkCarte{pnlWork.java[pnlWork" matchStrategy="1" name="pnlTabbed" qualified="false" references="true" similarDeclarations="false" stamp="1498203827543" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+/Users/p-kumu/MyFolder/WorkSpace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3893634223.index
+2379864955.index
+1432082683.index
+2541817758.index
+741422796.index
+3628001758.index
+3780416776.index
