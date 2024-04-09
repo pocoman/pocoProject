@@ -11,20 +11,69 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/DIR
+~MSle0~/Entities
+
+# Last Substitute Search Pattern:
+~MSle0&8080
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1712554557,,"wq"
 :q
-|2,0,1712554467,,"q"
+|2,0,1712640340,,"q"
+:wq
+|2,0,1712640335,,"wq"
+:tabnew ~/.vim/bundle/gruvbox/colors/gruvbox.vim
+|2,0,1712640305,,"tabnew ~/.vim/bundle/gruvbox/colors/gruvbox.vim"
 :w
-|2,0,1712553429,,"w"
+|2,0,1712640277,,"w"
+:colorscheme gruvbox
+|2,0,1712640229,,"colorscheme gruvbox"
 :Q
-|2,0,1712549367,,"Q"
+|2,0,1712640051,,"Q"
+:tabnew app/Entities/TestData.php
+|2,0,1712638058,,"tabnew app/Entities/TestData.php"
+:tabnew app/Models/TestData.php
+|2,0,1712638044,,"tabnew app/Models/TestData.php"
+:tabnew app/Views/model.php
+|2,0,1712638036,,"tabnew app/Views/model.php"
+:tabnew app/Config/Routes.php
+|2,0,1712637879,,"tabnew app/Config/Routes.php"
+:W
+|2,0,1712636179,,"W"
+:qa
+|2,0,1712630567,,"qa"
+:tabnew app/Config/Rout
+|2,0,1712630390,,"tabnew app/Config/Rout"
+:tabnew app/Entity/TestData.php
+|2,0,1712629593,,"tabnew app/Entity/TestData.php"
+:tabnew app/Ent
+|2,0,1712629527,,"tabnew app/Ent"
+:>w
+|2,0,1712629247,,">w"
+:Lw
+|2,0,1712628621,,"Lw"
+:tabnew 
+|2,0,1712628469,,"tabnew "
+:tabnew .env
+|2,0,1712628154,,"tabnew .env"
+:Lwq
+|2,0,1712626634,,"Lwq"
+:tabnew vendor/codeigniter4/framework/system/Config/DotEnv.php
+|2,0,1712626241,,"tabnew vendor/codeigniter4/framework/system/Config/DotEnv.php"
+:tabnew app/Config/Paths.php
+|2,0,1712626222,,"tabnew app/Config/Paths.php"
+:tabnew env
+|2,0,1712625570,,"tabnew env"
+:wqa
+|2,0,1712625493,,"wqa"
+:tabnew app/Config/Autoload.php
+|2,0,1712625352,,"tabnew app/Config/Autoload.php"
+:tabnew app/Controllers/Home.php
+|2,0,1712625013,,"tabnew app/Controllers/Home.php"
+:%s/8080/80/g
+|2,0,1712622215,,"%s/8080/80/g"
 :colorscheme 
 |2,0,1712548526,,"colorscheme "
 :colorscheme darklight
@@ -35,14 +84,40 @@ $
 |2,0,1712547781,,"q!"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1712630443,,"@$"
+?/Entities
+|2,1,1712630427,47,"Entities"
+?/a
+|2,1,1712630419,47,"a"
+?/var
+|2,1,1712626266,47,"var"
+?/system
+|2,1,1712626224,47,"system"
+?/loadDotEnv
+|2,1,1712626159,47,"loadDotEnv"
+?/env
+|2,1,1712626141,47,"env"
+?/CI_EN
+|2,1,1712625537,47,"CI_EN"
+? 8080
+|2,1,1712622215,,"8080"
+?/8080
+|2,1,1712622209,47,"8080"
+?//
+|2,1,1712556299,47,"/"
+?/80
+|2,1,1712556288,47,"80"
+?/443
+|2,1,1712555288,47,"443"
+?/8u0
+|2,1,1712555139,47,"8u0"
 ?/DIR
 |2,1,1712554383,47,"DIR"
 ?/eval
 |2,1,1712554270,47,"eval"
 ?/intl
 |2,1,1712553418,47,"intl"
-? @$
-|2,1,1712549365,,"@$"
 ?/black
 |2,1,1712548311,47,"black"
 
@@ -53,298 +128,444 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	BLOCK	31
-	"C:\xampp\htdocs\citest\public"
-|3,1,0,2,1,31,1712553356,"\"C:\\xampp\\htdocs\\citest\\public\""
-"1	LINE	0
-	    ServerAdmin webmaster@dummy-host.example.com
-|3,0,1,1,1,0,1712553321,"    ServerAdmin webmaster@dummy-host.example.com"
+"0	LINE	0
+	        $testModel = new \App\Models\TestData();
+|3,0,0,1,1,0,1712637917,"        $testModel = new \\App\\Models\\TestData();"
+""1	LINE	0
+	colorscheme darklight
+|3,1,1,1,1,0,1712640037,"colorscheme darklight"
 "2	LINE	0
-	    ServerAlias www.dummy-host.example.com
-|3,0,2,1,1,0,1712553245,"    ServerAlias www.dummy-host.example.com"
+	        $builder = 
+|3,0,2,1,1,0,1712637328,"        $builder = "
 "3	LINE	0
-	colorscheme blacklight
-|3,0,3,1,1,0,1712548312,"colorscheme blacklight"
+	        $result = $b;
+|3,0,3,1,1,0,1712637319,"        $result = $b;"
 "4	LINE	0
-	execute pathogen#infect()
-	
-|3,0,4,1,2,0,1712548305,"execute pathogen#infect()",""
+	        var_dump($result->getResult());die;
+|3,0,4,1,1,0,1712637248,"        var_dump($result->getResult());die;"
 "5	LINE	0
-	export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
-	
-|3,0,5,1,2,0,1712548045,"export PS1='\\[\\033[32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[34m\\]\\w\\[\\033[31m\\]$(__git_ps1)\\[\\033[00m\\]\\n\\$ '",""
+	        return $record['count'];
+|3,0,5,1,1,0,1712637109,"        return $record['count'];"
 "6	LINE	0
-	
-	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-	
-|3,0,6,1,3,0,1712548024,"","[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\" # Load RVM into a shell session *as a function*",""
+	        $query = $this->db->query("SELECT COUNT(idx) AS count FROM {$this->table}");
+	        $record = $query->getResultArray()[0];
+|3,0,6,1,2,0,1712637103,"        $query = $this->db->query(\"SELECT COUNT(idx) AS count FROM {$this->table}\");","        $record = $query->getResultArray()[0];"
 "7	LINE	0
-	
-	source ~/.git-completion.bash
-|3,0,7,1,2,0,1712548019,"","source ~/.git-completion.bash"
+	        var_dump($this)V;
+	        die;
+|3,0,7,1,2,0,1712636846,"        var_dump($this)V;","        die;"
 "8	LINE	0
-	alias wmp3="/bin/sh ~/Work/work_wmp3.sh"
-	alias wmp3_update="/bin/sh ~/Work/update_wmp3.sh"
-	alias wmp3_ctag="/bin/sh ~/Work/wmp3ctag.sh"
-	
-	alias wmp3_r="/bin/sh ~/Work/work_wmp3_r.sh"
-	alias wmp3_r_update="/bin/sh ~/Work/update_wmp3_r.sh"
-	alias njcapi="/bin/sh ~/Work/work_api.sh"
-	
-	alias wmp3_start="~/htdocs/auto_sftp/wmp3.sh"
-	alias api_start="~/htdocs/auto_sftp/api.sh"
-	alias work_stop="~/htdocs/auto_sftp/kill.sh"
-	
-	alias ctags="`brew --prefix`/bin/ctags"
-	alias wmp3_release="/bin/sh ~/Work/eb_wmp3_test.sh"
-	
-	alias pip="python -m pip";
-|3,0,8,1,16,0,1712548012,"alias wmp3=\"/bin/sh ~/Work/work_wmp3.sh\"","alias wmp3_update=\"/bin/sh ~/Work/update_wmp3.sh\"","alias wmp3_ctag=\"/bin/sh ~/Work/wmp3ctag.sh\"","","alias wmp3_r=\"/bin/sh ~/Work/work_wmp3_r.sh\"","alias wmp3_r_update=\"/bin/sh ~/Work/update_wmp3_r.sh\"","alias njcapi=\"/bin/sh ~/Work/work_api.sh\"","","alias wmp3_start=\"~/htdocs/auto_sftp/wmp3.sh\"","alias api_start=\"~/htdocs/auto_sftp/api.sh\"",>48
-|<"alias work_stop=\"~/htdocs/auto_sftp/kill.sh\"","","alias ctags=\"`brew --prefix`/bin/ctags\"","alias wmp3_release=\"/bin/sh ~/Work/eb_wmp3_test.sh\"","","alias pip=\"python -m pip\";"
+	        $db = db_connect();
+|3,0,8,1,1,0,1712636839,"        $db = db_connect();"
 "9	LINE	0
-	# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-	#export PATH="$PATH:$HOME/.rvm/bin"
-	
-	# git settings
-	# source /usr/local/Cellar/git/2.14.1/etc/bash_completion.d/git-prompt.sh
-	#source /usr/local/git/contrib/completion/git-completion.bash
-	#export PATH="$(brew --prefix homebrew/php/php72)/bin:$PATH"
-	
-	#GIT_PS1_SHOWDIRTYSTATE=true
-|3,0,9,1,9,0,1712547976,"# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.","#export PATH=\"$PATH:$HOME/.rvm/bin\"","","# git settings","# source /usr/local/Cellar/git/2.14.1/etc/bash_completion.d/git-prompt.sh","#source /usr/local/git/contrib/completion/git-completion.bash","#export PATH=\"$(brew --prefix homebrew/php/php72)/bin:$PATH\"","","#GIT_PS1_SHOWDIRTYSTATE=true"
-"-	CHAR	0
-	o
-|3,0,36,0,1,0,1712553224,"o"
+	        $db = db_connect();
+|3,0,9,1,1,0,1712636756,"        $db = db_connect();"
+"-	BLOCK	15
+	$builder->get();
+|3,0,36,2,1,15,1712637327,"$builder->get();"
 
 # File marks:
-'0  9  25  ~/.bash_profile
-|4,48,9,25,1712554557,"~/.bash_profile"
-'1  12  8  ~/.bash_profile
-|4,49,12,8,1712554534,"~/.bash_profile"
-'2  12  8  ~/.bash_profile
-|4,50,12,8,1712554534,"~/.bash_profile"
-'3  12  6  ~/.bash_profile
-|4,51,12,6,1712554507,"~/.bash_profile"
-'4  12  6  ~/.bash_profile
-|4,52,12,6,1712554507,"~/.bash_profile"
-'5  1  0  ~/.bashrc
-|4,53,1,0,1712554467,"~/.bashrc"
-'6  51  8  /etc/DIR_COLORS
-|4,54,51,8,1712554401,"/etc/DIR_COLORS"
-'7  66  0  /etc/bash.bashrc
-|4,55,66,0,1712554275,"/etc/bash.bashrc"
-'8  1109  0  /c/xampp/php/php.ini
-|4,56,1109,0,1712553432,"/c/xampp/php/php.ini"
-'9  33  26  /c/xampp/apache/conf/extra/httpd-vhosts.conf
-|4,57,33,26,1712553406,"/c/xampp/apache/conf/extra/httpd-vhosts.conf"
+'0  136  0  ~/.vimrc
+|4,48,136,0,1712640340,"~/.vimrc"
+'1  136  18  ~/.vimrc
+|4,49,136,18,1712640335,"~/.vimrc"
+'2  135  18  ~/.vimrc
+|4,50,135,18,1712640272,"~/.vimrc"
+'3  135  18  ~/.vimrc
+|4,51,135,18,1712640272,"~/.vimrc"
+'4  135  18  ~/.vimrc
+|4,52,135,18,1712640272,"~/.vimrc"
+'5  135  18  ~/.vimrc
+|4,53,135,18,1712640272,"~/.vimrc"
+'6  135  23  ~/.vimrc
+|4,54,135,23,1712640267,"~/.vimrc"
+'7  135  23  ~/.vimrc
+|4,55,135,23,1712640267,"~/.vimrc"
+'8  135  23  ~/.vimrc
+|4,56,135,23,1712640267,"~/.vimrc"
+'9  135  23  ~/.vimrc
+|4,57,135,23,1712640267,"~/.vimrc"
 
 # Jumplist (newest first):
--'  9  25  ~/.bash_profile
-|4,39,9,25,1712554557,"~/.bash_profile"
--'  12  8  ~/.bash_profile
-|4,39,12,8,1712554536,"~/.bash_profile"
--'  12  8  ~/.bash_profile
-|4,39,12,8,1712554534,"~/.bash_profile"
--'  12  6  ~/.bash_profile
-|4,39,12,6,1712554507,"~/.bash_profile"
--'  15  1  ~/.bash_profile
-|4,39,15,1,1712554470,"~/.bash_profile"
--'  15  1  ~/.bash_profile
-|4,39,15,1,1712554470,"~/.bash_profile"
--'  15  1  ~/.bash_profile
-|4,39,15,1,1712554470,"~/.bash_profile"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712554467,"~/.bashrc"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  51  8  /etc/DIR_COLORS
-|4,39,51,8,1712554401,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  1  0  /etc/DIR_COLORS
-|4,39,1,0,1712554383,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  207  10  /etc/DIR_COLORS
-|4,39,207,10,1712554376,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  81  0  /etc/DIR_COLORS
-|4,39,81,0,1712554369,"/etc/DIR_COLORS"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
--'  66  0  /etc/bash.bashrc
-|4,39,66,0,1712554275,"/etc/bash.bashrc"
+-'  136  0  ~/.vimrc
+|4,39,136,0,1712640340,"~/.vimrc"
+-'  136  18  ~/.vimrc
+|4,39,136,18,1712640335,"~/.vimrc"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640274,"~/.vimrc"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640274,"~/.vimrc"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640272,"~/.vimrc"
+-'  135  23  ~/.vimrc
+|4,39,135,23,1712640267,"~/.vimrc"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  26  0  /c/xampp/htdocs/citest/app/Models/TestData.php
+|4,39,26,0,1712640257,"/c/xampp/htdocs/citest/app/Models/TestData.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  45  12  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,45,12,1712640250,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  48  0  /c/xampp/htdocs/citest/app/Controllers/Home.php
+|4,39,48,0,1712640245,"/c/xampp/htdocs/citest/app/Controllers/Home.php"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640242,"~/.vimrc"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640242,"~/.vimrc"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640242,"~/.vimrc"
+-'  135  18  ~/.vimrc
+|4,39,135,18,1712640242,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640214,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640214,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640214,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640214,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640201,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640201,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640201,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1712640201,"~/.vimrc"
+-'  134  12  ~/.vimrc
+|4,39,134,12,1712640126,"~/.vimrc"
+-'  134  12  ~/.vimrc
+|4,39,134,12,1712640126,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
+> ~/.vimrc
+	*	1712640339	0
+	"	136	0
+	^	136	19
+	.	136	18
+	+	123	41
+	+	90	0
+	+	93	0
+	+	84	31
+	+	137	19
+	+	131	0
+	+	125	0
+	+	127	3
+	+	133	0
+	+	134	0
+	+	137	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	97	0
+	+	98	0
+	+	99	0
+	+	137	0
+	+	85	26
+	+	134	13
+	+	135	19
+	+	136	18
+
+> ~/.vim/bundle/gruvbox/colors/gruvbox.vim
+	*	1712640313	0
+	"	131	0
+
+> /c/xampp/htdocs/citest/app/Models/TestData.php
+	*	1712640256	0
+	"	26	0
+	.	18	0
+	+	1	5
+	+	27	0
+	+	3	21
+	+	25	1
+	+	10	34
+	+	20	0
+	+	13	54
+	+	19	0
+	+	19	63
+	+	19	0
+	+	6	30
+	+	19	11
+	+	19	28
+	+	19	18
+	+	19	0
+	+	16	9
+	+	8	11
+	+	19	0
+	+	19	9
+	+	16	9
+	+	19	0
+	+	19	27
+	+	8	11
+	+	19	9
+	+	19	10
+	+	19	18
+	+	19	8
+	+	19	9
+	+	19	50
+	+	19	36
+	+	16	0
+	+	19	19
+	+	19	0
+	+	10	9
+	+	19	0
+	+	10	0
+	+	19	0
+	+	19	59
+	+	19	0
+	+	19	24
+	+	19	9
+	+	19	39
+	+	19	25
+	+	19	0
+	+	19	54
+	+	19	8
+	+	19	14
+	+	19	0
+	+	19	30
+	+	19	0
+	+	19	43
+	+	15	0
+	+	24	0
+	+	24	8
+	+	24	0
+	+	24	24
+	+	24	11
+	+	19	23
+	+	24	0
+	+	23	41
+	+	16	34
+	+	21	35
+	+	23	49
+	+	19	0
+	+	19	79
+	+	19	30
+	+	19	34
+	+	18	0
+	+	18	36
+	+	18	45
+	+	18	0
+	+	18	59
+	+	18	0
+	+	18	18
+	+	18	0
+
+> /c/xampp/htdocs/citest/app/Controllers/Home.php
+	*	1712640249	0
+	"	45	12
+	^	46	28
+	.	46	27
+	+	17	0
+	+	16	0
+	+	17	24
+	+	23	0
+	+	20	30
+	+	19	0
+	+	20	9
+	+	19	9
+	+	20	0
+	+	19	8
+	+	20	8
+	+	12	0
+	+	11	0
+	+	12	23
+	+	14	27
+	+	20	30
+	+	22	8
+	+	21	22
+	+	20	7
+	+	21	0
+	+	20	0
+	+	21	45
+	+	30	39
+	+	25	35
+	+	28	0
+	+	25	33
+	+	28	0
+	+	30	39
+	+	30	72
+	+	28	0
+	+	29	40
+	+	30	39
+	+	29	48
+	+	30	0
+	+	30	39
+	+	25	35
+	+	30	39
+	+	30	31
+	+	25	33
+	+	30	27
+	+	25	35
+	+	30	31
+	+	25	33
+	+	30	39
+	+	31	0
+	+	30	33
+	+	38	0
+	+	35	0
+	+	35	48
+	+	36	30
+	+	37	0
+	+	48	0
+	+	42	48
+	+	47	0
+	+	46	27
+
 > ~/.bash_profile
-	*	1712554557	0
-	"	9	25
+	*	1712640118	0
+	"	2	0
 	^	9	26
 	.	9	25
 	+	17	0
@@ -360,6 +581,220 @@ $
 	+	7	23
 	+	8	24
 	+	9	25
+
+> ~/.viminfo
+	*	1712640011	0
+	"	1	0
+
+> /c/xampp/htdocs/citest/app/Entities/TestData.php
+	*	1712638059	0
+	"	31	16
+	^	28	22
+	.	31	0
+	+	15	9
+	+	19	23
+	+	33	55
+	+	33	41
+	+	17	22
+	+	10	24
+	+	11	21
+	+	12	21
+	+	33	0
+	+	32	0
+	+	29	0
+	+	33	0
+	+	30	0
+	+	33	0
+	+	24	0
+	+	27	41
+	+	28	21
+	+	25	0
+	+	31	0
+
+> /c/xampp/htdocs/citest/app/Views/model.php
+	*	1712638036	0
+	"	7	27
+	^	7	28
+	.	7	27
+	+	1	31
+	+	4	33
+	+	2	8
+	+	3	35
+	+	4	28
+	+	5	6
+	+	4	20
+	+	5	0
+	+	6	19
+	+	7	27
+
+> /c/xampp/htdocs/citest/app/Config/Routes.php
+	*	1712637893	0
+	"	13	36
+	^	13	37
+	.	13	36
+	+	9	19
+	+	10	32
+	+	11	11
+	+	12	35
+	+	13	36
+
+> /c/xampp/htdocs/citest/app/Config/Autoload.php
+	*	1712630566	0
+	"	80	4
+
+> /c/xampp/htdocs/citest/app/Entity/TestData.php
+	*	1712630427	0
+	"	3	14
+	^	31	21
+	.	31	20
+	+	33	0
+	+	13	5
+	+	10	21
+	+	12	18
+	+	32	5
+	+	15	42
+	+	30	0
+	+	20	31
+	+	29	0
+	+	23	27
+	+	22	37
+	+	23	44
+	+	28	0
+	+	27	0
+	+	28	37
+	+	27	36
+	+	31	20
+
+> /c/xampp/htdocs/citest/app/Config/Rout
+	*	1712630390	0
+	"	1	0
+
+> /c/xampp/htdocs/citest/preload.php
+	*	1712629565	0
+	"	114	0
+
+> /c/xampp/htdocs/citest/.env
+	*	1712628452	0
+	"	34	0
+
+> /c/xampp/htdocs/citest/app/Views/phpinfo.php
+	*	1712626577	0
+	"	2	9
+	^	2	10
+	.	2	9
+	+	2	9
+
+> /c/xampp/htdocs/citest/vendor/codeigniter4/framework/system/Boot.php
+	*	1712626267	0
+	"	142	12
+	.	141	0
+	+	141	26
+	+	141	0
+
+> /c/xampp/htdocs/citest/vendor/codeigniter4/framework/system/Config/DotEnv.php
+	*	1712626248	0
+	"	38	4
+
+> /c/xampp/htdocs/citest/app/Config/Paths.php
+	*	1712626224	0
+	"	64	4
+
+> /c/xampp/htdocs/citest/vendor/codeigniter4/framework/env
+	*	1712625642	0
+	"	17	1
+	^	17	2
+	.	17	1
+	+	17	1
+
+> /c/xampp/htdocs/citest/env
+	*	1712625570	0
+	"	17	0
+	^	39	0
+	.	39	0
+	+	17	27
+	+	33	0
+	+	34	0
+	+	35	0
+	+	36	0
+	+	37	0
+	+	38	0
+	+	39	0
+
+> /c/xampp/htdocs/citest/app/Config/App.php
+	*	1712624781	0
+	"	201	0
+
+> /c/xampp/htdocs/citest/app/Config/Routing.php
+	*	1712623014	0
+	"	140	0
+
+> /c/xampp/apache/conf/extra/httpd-vhosts.conf
+	*	1712622595	0
+	"	31	24
+	^	31	25
+	.	31	24
+	+	27	0
+	+	28	4
+	+	29	4
+	+	35	4
+	+	36	4
+	+	37	0
+	+	35	27
+	+	36	28
+	+	35	0
+	+	29	23
+	+	28	0
+	+	30	47
+	+	34	15
+	+	33	26
+	+	27	0
+	+	31	24
+
+> /c/Windows/System32/drivers/etc/hosts
+	*	1712557609	0
+	"	24	32
+	^	24	33
+	.	24	32
+	+	24	29
+	+	23	0
+	+	22	0
+	+	24	0
+	+	25	0
+	+	23	31
+	+	24	32
+
+> /c/xampp/apache/conf/original/httpd.conf
+	*	1712556303	0
+	"	227	28
+	^	59	22
+	.	60	10
+	+	60	10
+
+> /c/xampp/apache/conf/original/extra/httpd-vhosts.conf
+	*	1712556277	0
+	"	23	18
+	^	23	19
+	.	23	19
+	+	32	0
+	+	23	19
+
+> /c/xampp/apache/conf/httpd.conf
+	*	1712556211	0
+	"	228	21
+	^	228	25
+	.	228	24
+	+	228	25
+	+	60	7
+	+	228	25
+	+	60	10
+	+	228	24
+
+> /c/xampp/apache/conf/extra/httpd-ssl.conf
+	*	1712555291	0
+	"	36	10
+	^	36	11
+	.	36	10
+	+	36	10
 
 > ~/.bashrc
 	*	1712554465	0
@@ -390,47 +825,6 @@ $
 	^	934	0
 	.	934	0
 	+	934	0
-
-> /c/xampp/apache/conf/extra/httpd-vhosts.conf
-	*	1712553404	0
-	"	33	26
-	^	33	27
-	.	33	26
-	+	27	0
-	+	28	4
-	+	29	4
-	+	35	4
-	+	36	4
-	+	37	0
-	+	35	27
-	+	36	28
-	+	35	0
-	+	29	23
-	+	28	0
-	+	30	47
-	+	34	15
-	+	33	26
-
-> /c/xampp/apache/conf/httpd.conf
-	*	1712553185	0
-	"	557	0
-
-> ~/.vimrc
-	*	1712548658	0
-	"	134	0
-	^	134	0
-	.	134	0
-	+	122	41
-	+	89	0
-	+	92	0
-	+	84	31
-	+	134	19
-	+	130	0
-	+	124	0
-	+	126	3
-	+	132	0
-	+	133	0
-	+	134	0
 
 > /c/Git/pocoProject/backup/vimrc.vimrc
 	*	1712547881	0

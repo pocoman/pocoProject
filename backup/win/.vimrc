@@ -82,6 +82,7 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'jacoborus/tender.vim'
+NeoBundle 'morhetz/gruvbox'
 filetype plugin indent on
 NeoBundleCheck
 call neobundle#end()
@@ -90,12 +91,12 @@ autocmd FileType php set tags=$HOME/.vim/tags/wmp3.tags
 "autocmd FileType php set tags=$HOME/.vim/tags/njcrev.tags
 "
 
-augroup PHP
-  autocmd!
-  autocmd FileType php set makeprg=php\ -l\ %
-  " php -lの構文チェックでエラーがなければ「No syntax errors」の一行だけ出力される
-  autocmd BufWritePost *.php silent make | if len(getqflist()) != 1 | copen | else | cclose | endif
-augroup END
+"augroup PHP
+"  autocmd!
+"  autocmd FileType php set makeprg=php\ -l\ %
+"  " php -lの構文チェックでエラーがなければ「No syntax errors」の一行だけ出力される
+"  autocmd BufWritePost *.php silent make | if len(getqflist()) != 1 | copen | else | cclose | endif
+"augroup END
 
 command! -nargs=? Jq call s:Jq(<f-args>)
 function! s:Jq(...)
@@ -131,4 +132,5 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "
 " Theme
 syntax enable
-colorscheme tender
+colorscheme gruvbox
+set background=dark
