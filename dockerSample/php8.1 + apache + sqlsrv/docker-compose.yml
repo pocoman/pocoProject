@@ -1,3 +1,6 @@
+# 첫 실행시 ims-apache exec에서 아래 커맨드를 입력할것
+# /bin/sh -c /usr/local/bin/init.sh
+
 version: '3.9'
 
 services:
@@ -9,7 +12,10 @@ services:
             - "9000"
         volumes:
             - ./:/var/www/html #프로젝트 경로
-            #- ./docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+            - ./docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+            - ./docker/testnas:/testnas
+        networks:
+            - default
     apache:
         container_name: ims-apache
         build:
@@ -20,5 +26,16 @@ services:
             - "80:80"
         volumes:
             - ./:/var/www/html/
+            - ./docker/testnas:/testnas
+            - ./docker/init.sh:/usr/local/bin/init.sh
         environment:
             - CI_ENV=development
+        networks:
+            - mynet
+            - default
+networks:
+    mynet:
+        external: true
+    default:
+        external: false
+
