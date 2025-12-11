@@ -1,0 +1,41 @@
+# ---------------------------------------
+# PATH 설정
+# ---------------------------------------
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
+
+export CLASSPATH="$CLASSPATH:$HOME/javacv-bin/javacv.jar:$HOME/javacv-bin/javacpp.jar:."
+
+# ---------------------------------------
+# alias
+# ---------------------------------------
+alias ls='ls -Gh'
+alias ll='ls -lGh'
+alias la='ls -laGh'
+
+alias ctags="$(brew --prefix)/bin/ctags"
+
+alias pip="python -m pip"
+
+export LSCOLORS="gxfxcxdxbxegedabagacad"
+
+# ---------------------------------------
+# Git completion
+# ---------------------------------------
+if [ -f "$HOME/.git-completion.bash" ]; then
+    source "$HOME/.git-completion.bash"
+fi
+
+# ---------------------------------------
+# RVM
+# ---------------------------------------
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# ---------------------------------------
+# zshrc 
+# ---------------------------------------
+if [ -f "$HOME/.zshrc" ] ; then
+    source "$HOME/.zshrc"
+fi
